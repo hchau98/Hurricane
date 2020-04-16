@@ -5,16 +5,16 @@ public class Hurricane {
         System.out.println("Enter Hurricane Speed:");
         int speed = input.nextInt();
         int cat = 0;
-        if (speed>=74||speed<=95){
+        if (speed>=74&&speed<=95){
             cat = 1;
         }
-        if (speed>=96||speed<=110){
+        if (speed>=96&&speed<=110){
             cat = 2;
         }
-        if (speed>=111||speed<=125){
+        if (speed>=111&&speed<=125){
             cat = 3;
         }
-        if (speed>=130||speed<=156){
+        if (speed>=130&&speed<=156){
             cat = 4;
         }
         if (speed>=156){
@@ -22,6 +22,7 @@ public class Hurricane {
         }
         if (cat==0){
             System.out.println("Not Hurricane");
+            return;
         }
         System.out.println("Hurricane is a Category "+cat);
 
